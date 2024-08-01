@@ -6,6 +6,7 @@ function Navegador (){
             <Link to="/">Home</Link>
             <Link to="/Mis viajes">Mis viajes</Link>
             <Link to="/Mis fotos">Mis fotos</Link>
+            <Link to="/Carro">0</Link>
         </nav>
     )
 }
