@@ -23,6 +23,7 @@ function Home (){
                 a nosotros pero con costumbres diversas a las que conocemos y eso hace maravilloso estos viajes. 
                 Te invito a que juntos aprendamos lo que es nuestro planeta de lo afortunados que somos. 
             </p>
+            <img src="/public/_10015962.jpg" alt="Budas" className="w-screen h-auto p-10 rounded-3xl" />
         </div>
     )
 }
