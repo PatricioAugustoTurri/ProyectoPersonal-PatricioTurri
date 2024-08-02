@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navegador (){
     return (
-        <nav className="flex gap-5 text-base font-bold text-black">
+        <nav className="flex gap-5 text-base font-bold transition-opacity duration-500 ease-in-out">
             <Link to="/">Inicio</Link>
                 <div className="inline-block group">
                     <button className="flex items-center text-center">
@@ -14,8 +14,9 @@ function Navegador (){
                         </span>
                     </button>
                     <div className="absolute flex flex-col text-center transition-transform duration-150 ease-in-out origin-top transform scale-0 bg-slate-100 rounded-xl group-hover:scale-100 min-w-32">
-                        <Link to="/misviajes/América" className="px-3 py-2 font-serif text-base font-bold ttext-slate-400 hover:bg-gray-500 rounded-xl">América</Link>
+                        <Link to="/misviajes/América" className="px-3 py-2 font-serif text-base font-bold text-slate-400 hover:bg-gray-500 rounded-xl">América</Link>
                         <Link to="/misviajes/Asia" className="px-3 py-2 font-serif text-base font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Asia</Link>
+                        <Link to="/misviajes/Asia" className="px-3 py-2 font-serif text-base font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Europa</Link>
                     </div>
                 </div>
                 <div className="inline-block group">

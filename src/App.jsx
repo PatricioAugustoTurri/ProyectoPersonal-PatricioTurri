@@ -3,6 +3,7 @@ import Footer from "./Componentes/Footer";
 import Header from "./Componentes/Header";
 import Main from "./Componentes/Main";
 import { NextUIProvider } from '@nextui-org/react';
+import ReactPlayer from "react-player";
 
 function App (){
   return (

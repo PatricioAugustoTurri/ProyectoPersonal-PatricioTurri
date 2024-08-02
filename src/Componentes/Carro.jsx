@@ -7,7 +7,7 @@ function Carro (){
             <Input type="text" label="Apellido" />
             <Input type="text" label="Telefono" />
             <Input type="email" label="Email" placeholder="Email" />
-            <Button radius="lg" className="text-xl font-bold">Enviar</Button> 
+            <Button radius="lg" className="text-xl font-bold" type="submit">Enviar</Button> 
         </div>
     )
 }
