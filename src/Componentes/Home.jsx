@@ -8,8 +8,8 @@ function Home (){
                 playing={false} 
                 volume={0.5}   
                 controls
-                width={1080}
-                height={600}
+                width={1200}
+                height={650}
                 style={{margin: "auto",
                         borderRadius: "20px",
                         boxShadow: "0 0 10px rgba(0,0,0,0.5)",

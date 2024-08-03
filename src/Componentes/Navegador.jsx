@@ -20,9 +20,9 @@ function Navegador (){
                         </span>
                     </button>
                     <div className="absolute flex flex-col text-center transition-transform duration-150 ease-in-out origin-top transform scale-0 bg-slate-100 rounded-xl group-hover:scale-100 min-w-32">
-                        <Link to="/misviajes/América" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">América</Link>
-                        <Link to="/misviajes/Asia" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Asia</Link>
-                        <Link to="/misviajes/Asia" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Europa</Link>
+                        <Link to="/misviajes/América" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">AMERICA</Link>
+                        <Link to="/misviajes/Asia" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">ASIA</Link>
+                        <Link to="/misviajes/Asia" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">EUROPA</Link>
                     </div>
                 </div>
                 <div className="inline-block group">
@@ -35,10 +35,10 @@ function Navegador (){
                         </span>
                     </button>
                     <div className="absolute flex flex-col text-center transition-transform duration-150 ease-in-out origin-top transform scale-0 bg-slate-100 rounded-xl group-hover:scale-100 min-w-32">
-                        <Link to="/misfotos/retratos" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Retratos</Link>
-                        <Link to="/misfotos/paisajes" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Paisajes</Link>
-                        <Link to="/misfotos/lh" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Lugaes históricos</Link>
-                        <Link to="/misfotos/ciudades" className="px-3 py-1 font-serif text-xs font-bold text-slate-400 hover:bg-gray-500 rounded-xl">Ciudades</Link>
+                        <Link to="/misfotos/retratos" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">RETRATOS</Link>
+                        <Link to="/misfotos/paisajes" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">PAISAJES</Link>
+                        <Link to="/misfotos/lh" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">LUGARES HISTORICOS</Link>
+                        <Link to="/misfotos/ciudades" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">CIUDADES</Link>
                     </div>
                 </div>
                 <Link className="flex items-center gap-1" to="/carro">{cantCarro.cant}{<ShoppingCart size={15}/>}</Link>
