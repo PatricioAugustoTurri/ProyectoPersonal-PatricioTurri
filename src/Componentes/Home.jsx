@@ -8,7 +8,7 @@ function Home (){
                 playing={false} 
                 volume={0.5}   
                 controls
-                width={1200}
+                width={1150}
                 height={650}
                 style={{margin: "auto",
                         borderRadius: "20px",
@@ -19,9 +19,9 @@ function Home (){
             <h1 className="text-4xl font-bold py-7">¿Quién soy?</h1>
             <p className="py-3 text-base px-72">Hola. Soy Pato Turri, tengo 33 años y soy Argentino. Hace años que me 
                 dedico a viajar por el mundo con mi cámara, documentando mis mejores momentos. La idea de viajar
-                es conocer más allá de los lugares increíbles, es de aprender de culturas diferentes, de personas que son iguales 
-                a nosotros pero con costumbres diversas a las que conocemos y eso hace maravilloso estos viajes. 
-                Te invito a que juntos aprendamos lo que es nuestro planeta de lo afortunados que somos. 
+                es conocer más allá de los lugares increíbles que visito, es de aprender de culturas diferentes, de 
+                personas que son iguales a nosotros pero con costumbres diversas a las que conocemos y eso hace maravilloso 
+                estos viajes. Te invito a que juntos aprendamos lo que es nuestro planeta de lo afortunados que somos. 
             </p>
             <img src="/public/_10015962.jpg" alt="Budas" className="w-screen h-auto p-10 rounded-3xl" />
         </div>
