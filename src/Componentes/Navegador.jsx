@@ -6,7 +6,6 @@ import { miContexto } from "../Provider/CarroProvider";
 function Navegador (){
     const cantCarro = useContext(miContexto);
     const [isOpen, setIsOpen] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
 
     return (
         <div>
@@ -50,9 +49,8 @@ function Navegador (){
             </div>
             <div className="flex-col block sm:hidden">
                 <button onClick={() => setIsOpen(!isOpen)}><Menu size={25}/></button>
-                <div className= {`${!isOpen && "hidden"} fixed top-0 left-0 right-0 w-full min-h-screen bg-slate-600/50 backdrop-blur-sm`} onClick={() => setIsOpen(!isOpen)}></div>
-                    
-                <div className={`${isOpen ? "w-80" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-white bg-stone-800 w-80 transition-all duration-300`}>
+                <div className= {`${!isOpen && "hidden"} fixed top-0 left-0 right-0 w-full min-h-screen bg-slate-600/50 backdrop-blur-sm`} onClick={() => setIsOpen(!isOpen)}></div>   
+                <div className={`${isOpen ? "w-80" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-white bg-stone-800 transition-all duration-300`}>
                     <div className={`${!isOpen && "hidden"} flex flex-col justify-between gap-4 p-5`}>
                         <button className="flex justify-end" onClick={() => setIsOpen(!isOpen)}><X size={30}/></button>
                         <div className="flex flex-col gap-4">
