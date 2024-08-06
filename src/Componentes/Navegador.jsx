@@ -8,7 +8,7 @@ function Navegador (){
     const cantCarro = useContext(miContexto);
 
     return (
-        <nav className="flex gap-5 text-xs font-bold transition-opacity duration-500 ease-in-out">
+        <nav className="flex gap-5 text-xs font-bold transition-opacity duration-500 ease-in-out ">
             <Link to="/">INICIO</Link>
                 <div className="inline-block group">
                     <button className="flex items-center text-center">

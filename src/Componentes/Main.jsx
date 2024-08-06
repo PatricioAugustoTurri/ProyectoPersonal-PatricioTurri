@@ -8,7 +8,7 @@ import ContactoGracias from "./ContactoGracias";
 
 function Main (){
     return (
-        <main className="flex flex-col w-screen h-auto">
+        <main className="flex flex-col w-auto h-auto">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/misviajes" element={<Misviajes/>}/>
