@@ -10,8 +10,8 @@ function Footer (){
             </div>
             <div className="flex items-center justify-center gap-5 py-4 text-white">
                 <Link to="/">INICIO</Link>
-                <Link to="/preset">PRESET</Link>
-                <Link to="/porfolio">PORFOLIO</Link>
+                <Link to="/preset" className="hidden sm:block">PRESET</Link>
+                <Link to="/porfolio" className="hidden sm:block">PORFOLIO</Link>
                 <Link to="/contacto">CONTACTO</Link>
             </div>
         </footer>

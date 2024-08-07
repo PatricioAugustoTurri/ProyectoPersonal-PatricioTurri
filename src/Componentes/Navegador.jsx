@@ -52,24 +52,24 @@ function Navegador (){
             <div className="flex-col block sm:hidden">
                 <button onClick={() => setIsOpen(!isOpen)}><Menu size={25}/></button>
                 <div className= {`${!isOpen && "hidden"} fixed top-0 left-0 right-0 w-full min-h-screen bg-slate-600/50 backdrop-blur-sm`} onClick={() => setIsOpen(!isOpen)}></div>   
-                <div className={`${isOpen ? "w-50" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`}>
+                <div className={`${isOpen ? "w-80" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`}>
                     <div className={`${!isOpen && "hidden"} flex flex-col justify-between gap-4 p-5`}>
                         <button className="flex justify-end" onClick={() => setIsOpen(!isOpen)}><X size={30}/></button>
-                        <div className="flex flex-col gap-4 font-bold">
+                        <div className="flex flex-col gap-5 font-bold">
                             <Link to="/" onClick={() => setIsOpen(!isOpen)}>INICIO</Link>
                             <button className="flex justify-between"onClick={() => setIsOpen2(!isOpen2)}>MIS VIAJES<ChevronRight size={20}/></button>
-                            <div className={`${isOpen2 ? "w-50" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`}>
+                            <div className={`${isOpen2 ? "w-80" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`}>
                                 <div className={`${!isOpen2 && "hidden text-transparent"} flex flex-col justify-end gap-4 px-5 py-16 transition-all duration-300 text-black`}>
-                                    <button onClick={()=>setIsOpen2(!isOpen2)} className="flex justify-end"><ChevronLeft size={20}/></button>
+                                    <button onClick={()=>setIsOpen2(!isOpen2)} className="flex justify-end">MIS VIAJES<ChevronLeft size={20}/></button>
                                     <Link to="/misviajes/América" onClick={() => {setIsOpen2(!isOpen2) ; setIsOpen(!isOpen)}}>AMERICA</Link>
                                     <Link to="/misviajes/Asia" onClick={() =>{setIsOpen2(!isOpen2) ; setIsOpen(!isOpen)}}>ASIA</Link>
                                     <Link to="/misviajes/Asia" onClick={() => {setIsOpen2(!isOpen2) ; setIsOpen(!isOpen)}}>EUROPA</Link>
                                 </div>
                             </div>
                             <button className="flex justify-between" onClick={()=>setIsOpen3(!isOpen3)}>MIS FOTOS<ChevronRight size={20}/></button>
-                            <div className={`${isOpen3 ? "w-50" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`} >
+                            <div className={`${isOpen3 ? "w-80" : "w-0"} fixed top-0 left-0 flex flex-col min-h-screen text-sm text-black bg-white transition-all duration-300`} >
                                 <div className={`${!isOpen3 && "hidden text-transparent"} flex flex-col justify-end gap-4 px-5 py-16 transition-all duration-300 text-black`}>
-                                    <button className="flex justify-end" onClick={()=>setIsOpen3(!isOpen3)}><ChevronLeft size={20}/></button>
+                                    <button className="flex justify-end" onClick={()=>setIsOpen3(!isOpen3)}>MIS FOTOS<ChevronLeft size={20}/></button>
                                     <Link to="/misfotos/retratos"  onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>RETRATOS</Link>
                                     <Link to="/misfotos/paisajes"  onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>PAISAJES</Link>
                                     <Link to="/misfotos/lh" onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>LUGARES HISTORICOS</Link>
@@ -77,6 +77,8 @@ function Navegador (){
                                 </div>
                             </div>
                             <Link className="items-center hidden gap-1 sm:block" to="/carro" onClick={() => setIsOpen(!isOpen)}>{cantCarro.cant}{<ShoppingCart size={15}/>}</Link>
+                            <Link to="/preset"onClick={() => setIsOpen(!isOpen)}>PRESET</Link>
+                            <Link to="/porfolio"onClick={() => setIsOpen(!isOpen)}>PORFOLIO</Link>
                             <Link to="/contacto" onClick={() => setIsOpen(!isOpen)}>CONTACTO</Link>
                         </div>
                     </div>
