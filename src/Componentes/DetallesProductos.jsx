@@ -20,6 +20,7 @@ function DetallesProductos (){
 
     const sumarTotal = () =>{
         cantCarro.setCant(pro)
+        setPro(1)
     }
 
     return(
