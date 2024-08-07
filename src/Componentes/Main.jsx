@@ -5,6 +5,7 @@ import Misviajes from "./Misviajes";
 import MisFotos from "./MisFotos";
 import Contacto from "./Contacto";
 import ContactoGracias from "./ContactoGracias";
+import DetallesProductos from "./DetallesProductos";
 
 function Main (){
     return (
@@ -14,7 +15,7 @@ function Main (){
                 <Route path="/misviajes" element={<Misviajes/>}/>
                 <Route path="/misviajes/:id" element=""/>
                 <Route path="/misfotos" element={<MisFotos/>}/>
-                <Route path="/misfotos/:id" element=""/>
+                <Route path="/misfotos/:id" element={<DetallesProductos/>}/>
                 <Route path="/contacto" element={<Contacto/>}/>
                 <Route path="/contacto/gracias" element={<ContactoGracias/>}/>
                 <Route path="/carro" element={<Carro/>}/>

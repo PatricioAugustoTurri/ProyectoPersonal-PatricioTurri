@@ -9,7 +9,7 @@ function CarroProvider (props){
     
     const cosas = {
         cant : cant ,
-        setCant : () => setCant(cant + 1)
+        setCant : (a) => setCant(cant + a)
     }
 
     return (
