@@ -18,8 +18,8 @@ function DetallesProductos (){
         }
     }
 
-    const sumarTotal = (a) =>{
-        cantCarro.setCant(a)
+    const sumarTotal = () =>{
+        cantCarro.setCant(pro)
     }
 
     return(
@@ -30,7 +30,7 @@ function DetallesProductos (){
                 <Button size="sm" onClick={suma}><CirclePlus/></Button> 
                 <Button size="sm" onClick={resta}><CircleMinus/></Button> 
                 <h1 className="text-xl font-bold">{pro}</h1>
-                <Button color="success" onClick={sumarTotal(pro)}>Agregar</Button>
+                <Button color="success" onClick={sumarTotal}>Agregar</Button>
             </div>
         </div> 
     )

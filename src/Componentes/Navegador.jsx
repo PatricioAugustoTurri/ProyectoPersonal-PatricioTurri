@@ -78,7 +78,7 @@ function Navegador (){
                             </div>
                             <Link className="items-center hidden gap-1 sm:block" to="/carro" onClick={() => setIsOpen(!isOpen)}>{cantCarro.cant}{<ShoppingCart size={15}/>}</Link>
                             <Link to="/preset"onClick={() => setIsOpen(!isOpen)}>PRESET</Link>
-                            <Link to="/porfolio"onClick={() => setIsOpen(!isOpen)}>PORFOLIO</Link>
+                            <Link to="/portfolio"onClick={() => setIsOpen(!isOpen)}>PORTFOLIO</Link>
                             <Link to="/contacto" onClick={() => setIsOpen(!isOpen)}>CONTACTO</Link>
                         </div>
                     </div>
