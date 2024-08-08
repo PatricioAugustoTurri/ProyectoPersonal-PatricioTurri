@@ -9,7 +9,8 @@ import DetallesProductos from "./DetallesProductos";
 import { crearProducto } from "../crearProductos";
 
 function Main (){
-    crearProducto()
+    //crearProducto()
+
     return (
         <main className="flex flex-col w-auto h-auto sm:py-36">
             <Routes>
