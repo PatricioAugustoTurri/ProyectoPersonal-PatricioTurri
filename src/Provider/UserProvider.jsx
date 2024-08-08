@@ -6,7 +6,7 @@ const Provider = miContexto2.Provider ;
 function UserProvider (props){
     
     return (
-        <Provider>
+        <Provider value={{}}>
             {props.children}
         </Provider>
     )
