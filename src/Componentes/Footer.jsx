@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer (){
     return (
-        <footer className="py-12 text-xs bg-stone-800">
+        <footer className="py-10 text-xs bg-stone-800">
             <div className="flex items-center justify-center gap-4 py-4 text-white">
                 <a href="https://www.youtube.com/channel/UCGW3U0Tb5KXtq9BdS-9vuKg"><Youtube size={50}/></a>
                 <a href="https://www.instagram.com/soymigrante_/"><Instagram size={40}/></a>

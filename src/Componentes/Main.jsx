@@ -9,7 +9,7 @@ import DetallesProductos from "./DetallesProductos";
 
 function Main (){
     return (
-        <main className="flex flex-col w-auto h-auto">
+        <main className="flex flex-col w-auto h-auto sm:py-36">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/misviajes" element={<Misviajes/>}/>
