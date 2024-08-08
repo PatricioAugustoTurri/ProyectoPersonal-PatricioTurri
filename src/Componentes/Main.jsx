@@ -6,8 +6,10 @@ import MisFotos from "./MisFotos";
 import Contacto from "./Contacto";
 import ContactoGracias from "./ContactoGracias";
 import DetallesProductos from "./DetallesProductos";
+import { crearProducto } from "../crearProductos";
 
 function Main (){
+    crearProducto()
     return (
         <main className="flex flex-col w-auto h-auto sm:py-36">
             <Routes>
