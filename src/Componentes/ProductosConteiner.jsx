@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
 import { getProductos } from "../crearProductos";
-import Productos from "./Productos";
+import MisProductos from "./MisProductos";
 
 function ProductosContainer (){
-    const [productos, setProductos] = useState()
+    
+    const [misPro , setMisPro] = useState ([])
     useEffect(()=>{
         getProductos().then((res)=>{
-            setProductos(res)
-            console.log(res)
-            })
+            setMisPro(res)
         })
-    },[])
-    console.log(productos)
+    }, [])
     return (
         <div>
-            <Productos productos={productos}/>
-        </div>
+            <MisProductos productos={misPro}/>
+        </div>  
     )
 }
 
