@@ -14,6 +14,7 @@ function Main (){
                 <Route path="/misviajes" element={<Misviajes/>}/>
                 <Route path="/misviajes/:id" element=""/>
                 <Route path="/misfotos" element={<ProductosContainer/>}/>
+                <Route path="/portfolio" element={<ProductosContainer/>}/>
                 <Route path="/misfotos/:id" element=""/>
                 <Route path="/contacto" element={<Contacto/>}/>
                 <Route path="/contacto/gracias" element={<ContactoGracias/>}/>
