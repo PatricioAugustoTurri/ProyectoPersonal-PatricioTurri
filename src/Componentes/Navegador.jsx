@@ -40,9 +40,9 @@ function Navegador (){
                             </button>
                             <div className="absolute flex flex-col text-center transition-transform duration-150 ease-in-out origin-top transform scale-0 bg-slate-100 rounded-xl group-hover:scale-100 min-w-32">
                                 <Link to="/misfotos/retratos" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">RETRATOS</Link>
-                                <Link to="/misfotos/paisajes" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">PAISAJES</Link>
+                                <Link to="/misfotos/paisaje" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">PAISAJES</Link>
                                 <Link to="/misfotos/lh" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">LUGARES HISTORICOS</Link>
-                                <Link to="/misfotos/ciudades" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">CIUDADES</Link>
+                                <Link to="/misfotos/ciudad" className="px-3 py-1 font-serif text-xs text-slate-400 hover:bg-gray-500 rounded-xl">CIUDADES</Link>
                             </div>
                         </div>
                     <Link className="flex items-center gap-1" to="/carro">{cantCarro.cant}{<ShoppingCart size={15}/>}</Link>
@@ -71,9 +71,9 @@ function Navegador (){
                                 <div className={`${!isOpen3 && "hidden text-transparent"} flex flex-col justify-end gap-4 px-5 py-16 transition-all duration-300 text-black`}>
                                     <button className="flex justify-end" onClick={()=>setIsOpen3(!isOpen3)}>MIS FOTOS<ChevronLeft size={20}/></button>
                                     <Link to="/misfotos/retratos"  onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>RETRATOS</Link>
-                                    <Link to="/misfotos/paisajes"  onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>PAISAJES</Link>
+                                    <Link to="/misfotos/paisaje"  onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>PAISAJES</Link>
                                     <Link to="/misfotos/lh" onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>LUGARES HISTORICOS</Link>
-                                    <Link to="/misfotos/ciudades" onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>CIUDADES</Link>
+                                    <Link to="/misfotos/ciudad" onClick={() => {setIsOpen3(!isOpen3) ; setIsOpen(!isOpen)}}>CIUDADES</Link>
                                 </div>
                             </div>
                             <Link className="items-center hidden gap-1 sm:block" to="/carro" onClick={() => setIsOpen(!isOpen)}>{cantCarro.cant}{<ShoppingCart size={15}/>}</Link>

@@ -5,6 +5,7 @@ import ContactoGracias from "./ContactoGracias";
 import DetallesProductos from "./DetallesProductos";
 import ProductosContainer from "./ProductosConteiner";
 import HomeConteiner from "./HomeConteiner";
+import DetalleConteiner from "./DetalleConteiner";
 
 function Main (){
     return (
@@ -15,7 +16,8 @@ function Main (){
                 <Route path="/misviajes/:id" element=""/>
                 <Route path="/misfotos" element={<ProductosContainer/>}/>
                 <Route path="/portfolio" element={<ProductosContainer/>}/>
-                <Route path="/misfotos/:id" element=""/>
+                <Route path="/misfotos/:id" element={<ProductosContainer/>}/>
+                <Route path="/misfotos/detalle/:id" element={<DetalleConteiner/>}/>
                 <Route path="/contacto" element={<Contacto/>}/>
                 <Route path="/contacto/gracias" element={<ContactoGracias/>}/>
                 <Route path="/carro" element={<DetallesProductos/>}/>

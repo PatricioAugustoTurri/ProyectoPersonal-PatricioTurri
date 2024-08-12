@@ -41,7 +41,7 @@ function Home ({ yo }){
             </div>
             <div className="px-6 py-2">
                 {p2.map((p) => (
-                    <Link to="/misfotos/1"><img src={p.imagen} alt={p.titulo} className="w-screen h-auto shadow-small rounded-3xl animate-fade-up animate-ease-in-out"/></Link>
+                    <img src={p.imagen} alt={p.titulo} className="w-screen h-auto shadow-small rounded-3xl animate-fade-up animate-ease-in-out"/>
                 ))}
             </div>
         </div>
