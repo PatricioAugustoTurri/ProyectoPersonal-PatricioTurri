@@ -2,7 +2,6 @@ import { Routes , Route } from "react-router-dom";
 import Misviajes from "./Misviajes";
 import Contacto from "./Contacto";
 import ContactoGracias from "./ContactoGracias";
-import DetallesProductos from "./DetallesProductos";
 import ProductosContainer from "./ProductosConteiner";
 import HomeConteiner from "./HomeConteiner";
 import DetalleConteiner from "./DetalleConteiner";
@@ -20,7 +19,7 @@ function Main (){
                 <Route path="/misfotos/detalle/:id" element={<DetalleConteiner/>}/>
                 <Route path="/contacto" element={<Contacto/>}/>
                 <Route path="/contacto/gracias" element={<ContactoGracias/>}/>
-                <Route path="/carro" element={<DetallesProductos/>}/>
+                <Route path="/carro" element=""/>
             </Routes>
         </main>
     )
