@@ -18,6 +18,7 @@ function Detalle ({detalle}){
 
     const alCarro = () => {
         cantCarro.setCant(numero)
+        cantCarro.setCantPro (detalle)
     }
 
     return (
