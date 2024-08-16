@@ -12,10 +12,9 @@ function CarroProvider (props){
         cant : cant ,
         setCant : (a) => setCant(cant + a) ,
         cantPro : cantPro ,
-        setCantPro : (a) => {setCantPro(cantPro.concat(a))} ,
-
-        } 
-    
+        setCantPro : (a) => {setCantPro(cantPro.concat(a))                        
+        } ,
+    }
     
     return (
         <Provider value={cosas}>

@@ -13,7 +13,7 @@ function DetalleConteiner (){
             }))
         })
     } , [para.id])
-   console.log(deta)
+
     return (
         <Detalle detalle={deta}/>
     )

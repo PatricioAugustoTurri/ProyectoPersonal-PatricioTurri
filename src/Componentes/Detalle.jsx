@@ -17,15 +17,18 @@ function Detalle ({detalle}){
     const cantCarro = useContext(miContexto);
 
     const alCarro = () => {
+        detalle.map((item)=>{
+            item.cant = numero
+        })
         cantCarro.setCant(numero)
         cantCarro.setCantPro (detalle)
     }
 
     return (
         <div>
-            {detalle.map((item)=>{
+            {detalle.map((item , index)=>{
                 return (
-                    <div className="gap-4 px-5 md:flex md:px-20">
+                    <div key={index} className="gap-4 px-5 md:flex md:px-20">
                         <img src={item.imagen} 
                             alt={item.titulo} 
                             className="float-left transition duration-1000 md:float-none size-auto md:size-96 rounded-xl hover:shadow-sm md:hover:scale-125 md:hover:translate-x-52 md:hover:translate-y-20 md:hover:size-2/3 md:hover:aspect-auto md:object-cover"/>
