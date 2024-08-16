@@ -12,6 +12,7 @@
   "dependencies": {
     "@nextui-org/button": "^2.0.37",
     "@nextui-org/react": "^2.4.6",
+    "@paypal/react-paypal-js": "^8.5.0",
     "antd": "^5.17.4",
     "firebase": "^10.12.5",
     "framer-motion": "^11.3.20",
