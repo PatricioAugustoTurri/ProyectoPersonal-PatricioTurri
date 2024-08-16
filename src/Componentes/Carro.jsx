@@ -11,13 +11,12 @@ function Carro () {
             {detalles.cantPro.map((item , index)=>{
                 return (
                     <article key={index} className="flex items-center gap-4">
-                        <img src={item.imagen} alt={item.titulo} className="object-cover rounded-lg size-28"/>
+                        <img src={item.imagen} alt={item.titulo} className="object-cover rounded-lg size-16 md:size-28"/>
                         <div className="text-black/80">
-                            <h1 className="text-xl font-bold">{item.titulo}</h1>
-                            <p>Cantidad: {item.cant}</p>
-                            
+                            <h1 className="text-lg font-bold md:text-2xl">{item.titulo}</h1>
+                            <p className="text-base font-bold text-black/50 md:text-xl">Cantidad: {item.cant}</p> 
+                            <p className="flex items-center p-1 font-black rounded-full text-small bg-red-800/30 md:text-base">Precio: {<Euro size={25}/>}{item.precio}</p> 
                         </div>
-                        <p className="flex items-center p-1 font-black rounded-full bg-red-800/30">Precio: {<Euro size={25}/>}{item.precio}</p> 
                     </article>
                 )
             })}
