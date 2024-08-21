@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { miContexto } from "../Provider/CarroProvider";
 import { Euro, EuroIcon } from "lucide-react";
+import PayPal from "./PayPal";
 
 function Carro () {
     const detalles = useContext(miContexto)
     console.log(detalles.cantPro)
+    
     return (
         <div className="flex flex-col justify-normal md:justify-between md:flex-row">
         <div className="flex flex-col gap-5 px-5 py-5 md:px-20 sm:py-0">
@@ -24,6 +26,7 @@ function Carro () {
         <div className="flex flex-col gap-2 px-5 py-5 md:gap-5 md:px-20 sm:py-0">
             <h1 className="text-3xl font-black md:text-6xl">Total a pagar es:</h1>
             <p className="flex items-center justify-start text-4xl font-black md:justify-end text-red-800/70">{<EuroIcon size={50}/>}{detalles.cantPro.reduce((acum, item) => acum + item.precio*item.cant, 0)}</p>
+            <PayPal props = {{titulo : "Prueba" , precio : 100}}/>
         </div>
         </div>
     )
